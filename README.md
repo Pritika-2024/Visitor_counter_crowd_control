@@ -47,7 +47,7 @@ The system uses two IR sensors — one at the entry and one at the exit — to d
 
 The Arduino Uno is the central controller. Both IR sensors connect to digital input pins D2 and D3. The servo motor PWM signal goes to D9. The LCD communicates over I2C using A4 (SDA) and A5 (SCL), which reduces wiring to just 4 wires. The 4x4 keypad uses 8 digital pins — rows on D12, D11, D10, D8 and columns on D4, D5, D6, D7.
 
-<img src= "./01_Visitor_counter_using_ArduinoUNO/docs/Circuit.png" height="500">
+<img src= "./01_Visitor_counter_using_ArduinoUNO/docs/Circuit.png" height="300">
 
 | Component | Arduino Pin |
 |---|---|
@@ -65,7 +65,7 @@ The Arduino Uno is the central controller. Both IR sensors connect to digital in
 
 The system was physically assembled and tested using a cardboard door model named "Mondini Hall." The LCD and keypad were mounted on the front panel for user interaction. The Arduino, servo, and IR sensors were wired behind the frame. The servo arm was mechanically linked to a door flap to simulate real door open/close operation.
 
-<img src="./01_Visitor_counter_using_ArduinoUNO/docs/Implementation.jpeg" width="500">
+<img src="./01_Visitor_counter_using_ArduinoUNO/docs/Implementation.jpeg" width="400">
 
 ---
 
@@ -73,14 +73,13 @@ The system was physically assembled and tested using a cardboard door model name
 
 The schematic and PCB were designed in KiCad to convert the breadboard prototype into a production-ready layout. The schematic captures all component connections and net assignments. The PCB consolidates these into a compact single-layer board with clearly labeled pads for each peripheral.
 
-![Schematic](https://github.com/YOUR_USERNAME/visitor-counter-crowd-control/raw/main/docs/schematic.png)
+<img src="./01_Visitor_counter_using_ArduinoUNO/docs/schematic.png" width="400">
 
-![PCB Layout](https://github.com/YOUR_USERNAME/visitor-counter-crowd-control/raw/main/docs/pcb.png)
+<img src="./01_Visitor_counter_using_ArduinoUNO/docs/pcb.png" width="400">
 
 The 3D view confirms component placement and checks for mechanical clearance before fabrication.
 
-![3D View](https://github.com/YOUR_USERNAME/visitor-counter-crowd-control/raw/main/docs/3D%20view.png)
-
+<img src="./01_Visitor_counter_using_ArduinoUNO/docs/3D%20view.png" width="400">
 ---
 
 ## 🧰 Components
