@@ -19,13 +19,13 @@ const int debounceDelay = 1000;
 
 const byte ROWNUM = 4;
 const byte COLUMNNUM = 4;
-byte pinrows[ROWNUM] = {12, 11, 10, 8};
-byte pincolumn[COLUMNNUM] = {4, 5, 6, 7};
+byte pinrows[ROWNUM] = {4, 5, 6, 7 };
+byte pincolumn[COLUMNNUM] = {8, 10, 11, 12};
 char keys[ROWNUM][COLUMNNUM] = {
-  {'A', '3', '2', '1'},
-  {'B', '6', '5', '4'},
-  {'C', '9', '8', '7'},
-  {'D', '#', '0', '*'}
+  {'1', '2', '3', 'A'},
+  {'4', '5', '6', 'B'},
+  {'7', '8', '9', 'C'},
+  {'*', '0', '#', 'D'}
 };
 
 Keypad keypad = Keypad(makeKeymap(keys), pinrows, pincolumn, ROWNUM, COLUMNNUM);
