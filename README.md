@@ -8,14 +8,14 @@
 ---
 
 ## Table of Contents
-- [How It Works](#-how-it-works)
-- [Circuit](#-circuit)
-- [Hardware Implementation](#-hardware-implementation)
-- [PCB Design](#-pcb-design)
-- [Components](#-components)
-- [Libraries Used](#-libraries-used)
-- [Source Code](#-source-code)
-- [Results](#-results)
+- How It Works
+- Circuit
+- Hardware Implementation
+- PCB Design
+- Components
+- Libraries Used
+- Source Code
+- Results
 
 ---
 
