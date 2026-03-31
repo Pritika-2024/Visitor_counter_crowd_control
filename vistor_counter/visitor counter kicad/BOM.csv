@@ -1,0 +1,9 @@
+Reference,Qty,Value,Footprint
+LCD,1,,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+Keypad,1,,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical
+VCC_flag01,1,PWR_FLAG,
+GND_flag01,1,PWR_FLAG,
+Exit_sensor1,1,ExitSensor,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+Entry_sensor1,1,EntrySensor,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+DoorServo,1,,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+Arduino_UNO,1,Arduino,Module:Arduino_UNO_R3

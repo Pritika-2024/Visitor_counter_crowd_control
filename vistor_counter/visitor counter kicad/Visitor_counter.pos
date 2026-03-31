@@ -1,0 +1,12 @@
+### Footprint positions - created on 2026-03-27T14:45:39 ###
+### Printed by KiCad version 10.0.0
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref        Val       Package                               PosX       PosY       Rot  Side
+Arduino_UNO  Arduino   Arduino_UNO_R3                    174.6300   -91.6400  -90.0000  top
+DoorServo              PinHeader_1x03_P2.54mm_Vertical   179.2400   -91.7000    0.0000  top
+EntrySensor            PinHeader_1x03_P2.54mm_Vertical   115.7000  -126.7800   90.0000  top
+ExitSensor             PinHeader_1x03_P2.54mm_Vertical   120.2400  -113.2800    0.0000  top
+Keypad       4x4       PinHeader_1x08_P2.54mm_Vertical   120.2400  -106.7800  180.0000  top
+LCD                    PinHeader_1x04_P2.54mm_Vertical   179.7400  -113.7800    0.0000  top
+## End
