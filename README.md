@@ -1,9 +1,7 @@
-# 🚪 Secure Visitor Counter with Crowd Control
+# Secure Visitor Counter with Crowd Control
 
 ![Arduino](https://img.shields.io/badge/Platform-Arduino%20Uno-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Language](https://img.shields.io/badge/Language-Embedded%20C-blue?style=for-the-badge)
-![Simulation](https://img.shields.io/badge/Simulation-Wokwi%20%7C%20Proteus-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
 > An automated visitor monitoring and crowd control system using IR sensors, servo motor, 16x2 LCD and a 4x4 keypad — built on Arduino Uno. The system restricts entry once maximum occupancy is reached and allows access only through registration number verification.
 
@@ -25,7 +23,7 @@
 
 The system uses two IR sensors — one at the entry and one at the exit — to detect movement and maintain an accurate real-time visitor count. The Arduino Uno processes all sensor signals, manages the door mechanism, and enforces the maximum occupancy limit.
 
-![Block Diagram](https://github.com/YOUR_USERNAME/visitor-counter-crowd-control/raw/main/docs/Block%20Diag.jpeg)
+![Block Diagram](Visitor_counter_using_ArduinoUNO/docs/Block Diag.jpeg)
 
 **Step-by-step flow:**
 
