@@ -23,7 +23,7 @@
 
 The system uses two IR sensors — one at the entry and one at the exit — to detect movement and maintain an accurate real-time visitor count. The Arduino Uno processes all sensor signals, manages the door mechanism, and enforces the maximum occupancy limit.
 
-![Block Diagram]<img src="./01_Visitor_counter_using_ArduinoUNO/docs/Block_diag.jpeg" width="500">
+<img src="./01_Visitor_counter_using_ArduinoUNO/docs/Block_diag.jpeg" width="500">
 
 **Step-by-step flow:**
 
@@ -47,7 +47,7 @@ The system uses two IR sensors — one at the entry and one at the exit — to d
 
 The Arduino Uno is the central controller. Both IR sensors connect to digital input pins D2 and D3. The servo motor PWM signal goes to D9. The LCD communicates over I2C using A4 (SDA) and A5 (SCL), which reduces wiring to just 4 wires. The 4x4 keypad uses 8 digital pins — rows on D12, D11, D10, D8 and columns on D4, D5, D6, D7.
 
-![Circuit Diagram](https://github.com/YOUR_USERNAME/visitor-counter-crowd-control/raw/main/docs/Circuit.png)
+![Circuit Diagram](./01_Visitor_counter_using_ArduinoUNO/docs/Circuit.png)
 
 | Component | Arduino Pin |
 |---|---|
@@ -65,7 +65,7 @@ The Arduino Uno is the central controller. Both IR sensors connect to digital in
 
 The system was physically assembled and tested using a cardboard door model named "Mondini Hall." The LCD and keypad were mounted on the front panel for user interaction. The Arduino, servo, and IR sensors were wired behind the frame. The servo arm was mechanically linked to a door flap to simulate real door open/close operation.
 
-![Implementation](https://github.com/YOUR_USERNAME/visitor-counter-crowd-control/raw/main/docs/Implementation.jpeg)
+![Implementation](./01_Visitor_counter_using_ArduinoUNO/docs/Implementation.jpeg)
 
 ---
 
