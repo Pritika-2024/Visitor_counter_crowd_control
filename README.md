@@ -23,9 +23,8 @@
 
 The system uses two IR sensors — one at the entry and one at the exit — to detect movement and maintain an accurate real-time visitor count. The Arduino Uno processes all sensor signals, manages the door mechanism, and enforces the maximum occupancy limit.
 <p align="center">
-<img src="./01_Visitor_counter_using_ArduinoUNO/docs/Block_diag.jpeg" width="500">
-  
 <b> Block Diagram </b>
+<img src="./01_Visitor_counter_using_ArduinoUNO/docs/Block_diag.jpeg" width="500">
 </p>
 
 **Step-by-step flow:**
@@ -48,11 +47,10 @@ The system uses two IR sensors — one at the entry and one at the exit — to d
 
 ##  Circuit
 
-The Arduino Uno is the central controller. Both IR sensors connect to digital input pins D2 and D3. The servo motor PWM signal goes to D9. The LCD communicates over I2C using A4 (SDA) and A5 (SCL), which reduces wiring to just 4 wires. The 4x4 keypad uses 8 digital pins — rows on D12, D11, D10, D8 and columns on D4, D5, D6, D7.
+The Arduino Uno is the central controller. Both IR sensors connect to digital input pins D2 and D3. The servo motor PWM signal goes to D9. The LCD communicates over I2C using A4 (SDA) and A5 (SCL), which reduces wiring to just 4 wires. The 4x4 keypad uses 8 digital pins — rows on D4, D5, D6, D7 and columns on D8, D10, D11, D12.
 <p align="center">
-<img src= "./01_Visitor_counter_using_ArduinoUNO/docs/Circuit.png" height="400">
-  
 <b> Circuit Diagram </b>
+<img src= "./01_Visitor_counter_using_ArduinoUNO/docs/Circuit.png" height="400">
 </p>
 
 | Component | Arduino Pin |
@@ -62,8 +60,8 @@ The Arduino Uno is the central controller. Both IR sensors connect to digital in
 | Servo Motor (Signal) | D9 |
 | LCD SDA | A4 |
 | LCD SCL | A5 |
-| Keypad Rows | D12, D11, D10, D8 |
-| Keypad Columns | D4, D5, D6, D7 |
+| Keypad Rows | D4, D5, D6, D7 |
+| Keypad Columns | D8, D10, D11, D12 |
 
 ---
 
@@ -72,9 +70,8 @@ The Arduino Uno is the central controller. Both IR sensors connect to digital in
 The system was physically assembled and tested using a cardboard door model named "Mondini Hall." The LCD and keypad were mounted on the front panel for user interaction. The Arduino, servo, and IR sensors were wired behind the frame. The servo arm was mechanically linked to a door flap to simulate real door open/close operation.
 
 <p align="center">
-<img src="./01_Visitor_counter_using_ArduinoUNO/docs/Implementation.jpeg" width="400">
-  
 <b> Hardware Implementation </b>
+<img src="./01_Visitor_counter_using_ArduinoUNO/docs/Implementation.jpeg" width="400">
 </p>
 ---
 
@@ -82,22 +79,19 @@ The system was physically assembled and tested using a cardboard door model name
 
 The schematic and PCB were designed in KiCad to convert the breadboard prototype into a production-ready layout. The schematic captures all component connections and net assignments. The PCB consolidates these into a compact single-layer board with clearly labeled pads for each peripheral.
 <p align="center">
-<img src="./01_Visitor_counter_using_ArduinoUNO/docs/schematic.png" width="400">
-  
 <b> Schematic Diagram </b>
+<img src="./01_Visitor_counter_using_ArduinoUNO/docs/schematic.png" width="400">
 </p>
 
 <p align="center">
-<img src="./01_Visitor_counter_using_ArduinoUNO/docs/pcb.png" width="400">
-  
 <b> PCB layout </b>
+<img src="./01_Visitor_counter_using_ArduinoUNO/docs/pcb.png" width="400">
 </p>
 
 The 3D view confirms component placement and checks for mechanical clearance before fabrication.
 <p align="center">
-<img src="./01_Visitor_counter_using_ArduinoUNO/docs/3D%20view.png" width="400">
-  
 <b> 3D view </b>
+<img src="./01_Visitor_counter_using_ArduinoUNO/docs/3D%20view.png" width="400">
 </p>
 ---
 
@@ -132,13 +126,12 @@ The 3D view confirms component placement and checks for mechanical clearance bef
 
 | File | Description |
 |---|---|
-| [`01_src/03_a.cpp`](./01_src/03_a.cpp) | Main Arduino source code — full system logic |
-| [`02_Visitor_simulation/sketch.ino`](02_Visitor_simulation/sketch.ino) | Wokwi online simulation sketch |
-| [`02_Visitor_simulation/diagram.json`](02_Visitor_simulation/diagram.json) | Wokwi circuit wiring diagram |
-| [`02_Visitor_simulation/libraries.txt`](02_Visitor_simulation/libraries.txt) | Library dependencies for simulation |
-| [`03_PCB/Schematic.kicad_sch`](03_PCB/Schematic.kicad_sch) | KiCad schematic source file |
-| [`03_PCB/PCB_design.kicad_pcb`](03_PCB/PCB_design.kicad_pcb) | KiCad PCB layout source file |
-| [`03_PCB/Visitor_Counter.kicad_pro`](03_PCB/Visitor_Counter.kicad_pro) | KiCad project file |
+| [`src/Code.cpp`](./01_Visitor_counter_using_ArduinoUNO/01_src/Code.cpp) | Main Arduino source code — visitor counting logic |
+| [`02_Visitor_simulation/sketch.ino`](./01_Visitor_counter_using_ArduinoUNO/02_Visitor_simulation/sketch.ino) | Wokwi online simulation sketch |
+| [`02_Visitor_simulation/diagram.json`](./01_Visitor_counter_using_ArduinoUNO/02_Visitor_simulation/diagram.json) | Wokwi circuit wiring diagram |
+| [`02_Visitor_simulation/libraries.txt`](./01_Visitor_counter_using_ArduinoUNO/02_Visitor_simulation/libraries.txt) | Library dependencies for simulation |
+| [`03_PCB/Schematic.kicad_sch`](./01_Visitor_counter_using_ArduinoUNO/03_PCB/Schematic.kicad_sch) | KiCad schematic source file |
+| [`03_PCB/PCB_design.kicad_pcb`](./01_Visitor_counter_using_ArduinoUNO/03_PCB/PCB_design.kicad_pcb) | KiCad PCB layout source file | | [`03_PCB/Visitor_Counter.kicad_pro`](./01_Visitor_counter_using_ArduinoUNO/03_PCB/Visitor_Counter.kicad_pro) | KiCad project file |
 
 **Default valid registration numbers:**
 ```
@@ -148,7 +141,7 @@ The 3D view confirms component placement and checks for mechanical clearance bef
 
 ---
 
-## 📊 Results
+## Results
 
 The system was tested across multiple scenarios and performed accurately in all cases.
 
@@ -160,15 +153,15 @@ The debounce mechanism successfully prevented false triggers on both entry and e
 
 | Test Case | Input | Result |
 |---|---|---|
-| Power ON | — | `Visitor Counter / Count: 0/4` ✅ |
-| Valid entry | Reg. No: 1238 | Count increments, door opens ✅ |
-| Invalid entry | Reg. No: 0000 | `Invalid Number` shown ✅ |
-| Max capacity | Count = 4 | `Max Count Reached / Entry Prohibited` ✅ |
-| Exit detected | IR Exit triggered | Count decrements, entry re-enabled ✅ |
-| Incomplete input | Less than 4 digits + # | `Enter 4 digits!` shown ✅ |
+| Power ON | — | `Visitor Counter / Count: 0/4`  |
+| Valid entry | Reg. No: 1238 | Count increments, door opens |
+| Invalid entry | Reg. No: 0000 | `Invalid Number` shown  |
+| Max capacity | Count = 4 | `Max Count Reached / Entry Prohibited`  |
+| Exit detected | IR Exit triggered | Count decrements, entry re-enabled  |
+| Incomplete input | Less than 4 digits + # | `Enter 4 digits!` shown |
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the [MIT License](LICENSE).
