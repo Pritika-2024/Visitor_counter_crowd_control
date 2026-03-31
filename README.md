@@ -23,7 +23,7 @@
 
 The system uses two IR sensors — one at the entry and one at the exit — to detect movement and maintain an accurate real-time visitor count. The Arduino Uno processes all sensor signals, manages the door mechanism, and enforces the maximum occupancy limit.
 
-![Block Diagram](docs/Block_diag.jpeg)
+![Block Diagram](./01_Visitor_counter_using_ArduinoUNO/docs/Block_diag.jpeg)
 
 **Step-by-step flow:**
 
