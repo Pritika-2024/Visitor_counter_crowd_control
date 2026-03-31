@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 - [How It Works](#-how-it-works)
 - [Circuit](#-circuit)
 - [Hardware Implementation](#-hardware-implementation)
@@ -24,8 +24,10 @@
 The system uses two IR sensors — one at the entry and one at the exit — to detect movement and maintain an accurate real-time visitor count. The Arduino Uno processes all sensor signals, manages the door mechanism, and enforces the maximum occupancy limit.
 <p align="center">
 <img src="./01_Visitor_counter_using_ArduinoUNO/docs/Block_diag.jpeg" width="500">
+  
 <b> Block Diagram </b>
 </p>
+
 **Step-by-step flow:**
 
 **1. System Initialization** — On power-up, the Arduino initializes all peripherals. The LCD displays `Visitor Counter | Count: 0/4` and the servo motor holds the door in the closed position.
@@ -44,12 +46,13 @@ The system uses two IR sensors — one at the entry and one at the exit — to d
 
 ---
 
-## 🔌 Circuit
+##  Circuit
 
 The Arduino Uno is the central controller. Both IR sensors connect to digital input pins D2 and D3. The servo motor PWM signal goes to D9. The LCD communicates over I2C using A4 (SDA) and A5 (SCL), which reduces wiring to just 4 wires. The 4x4 keypad uses 8 digital pins — rows on D12, D11, D10, D8 and columns on D4, D5, D6, D7.
 <p align="center">
 <img src= "./01_Visitor_counter_using_ArduinoUNO/docs/Circuit.png" height="400">
-<b> Block Diagram </b>
+  
+<b> Circuit Diagram </b>
 </p>
 
 | Component | Arduino Pin |
@@ -64,36 +67,41 @@ The Arduino Uno is the central controller. Both IR sensors connect to digital in
 
 ---
 
-## 🛠️ Hardware Implementation
+## Hardware Implementation
 
 The system was physically assembled and tested using a cardboard door model named "Mondini Hall." The LCD and keypad were mounted on the front panel for user interaction. The Arduino, servo, and IR sensors were wired behind the frame. The servo arm was mechanically linked to a door flap to simulate real door open/close operation.
 
 <p align="center">
 <img src="./01_Visitor_counter_using_ArduinoUNO/docs/Implementation.jpeg" width="400">
-<b> Block Diagram </b>
+  
+<b> Hardware Implementation </b>
 </p>
 ---
 
-## 📐 PCB Design
+##  PCB Design
 
 The schematic and PCB were designed in KiCad to convert the breadboard prototype into a production-ready layout. The schematic captures all component connections and net assignments. The PCB consolidates these into a compact single-layer board with clearly labeled pads for each peripheral.
 <p align="center">
 <img src="./01_Visitor_counter_using_ArduinoUNO/docs/schematic.png" width="400">
-<b> Block Diagram </b>
+  
+<b> Schematic Diagram </b>
 </p>
+
 <p align="center">
 <img src="./01_Visitor_counter_using_ArduinoUNO/docs/pcb.png" width="400">
-<b> Block Diagram </b>
+  
+<b> PCB layout </b>
 </p>
 
 The 3D view confirms component placement and checks for mechanical clearance before fabrication.
 <p align="center">
 <img src="./01_Visitor_counter_using_ArduinoUNO/docs/3D%20view.png" width="400">
-<b> Block Diagram </b>
+  
+<b> 3D view </b>
 </p>
 ---
 
-## 🧰 Components
+##  Components
 
 | # | Component | Qty | Cost |
 |---|---|---|---|
@@ -106,7 +114,7 @@ The 3D view confirms component placement and checks for mechanical clearance bef
 
 ---
 
-## 📚 Libraries Used
+##  Libraries Used
 
 | Library | Purpose |
 |---|---|
@@ -120,11 +128,11 @@ The 3D view confirms component placement and checks for mechanical clearance bef
 
 ---
 
-## 💻 Source Code
+##  Source Code
 
 | File | Description |
 |---|---|
-| [`01_src/03_a.cpp`](01_src/03_a.cpp) | Main Arduino source code — full system logic |
+| [`01_src/03_a.cpp`](./01_src/03_a.cpp) | Main Arduino source code — full system logic |
 | [`02_Visitor_simulation/sketch.ino`](02_Visitor_simulation/sketch.ino) | Wokwi online simulation sketch |
 | [`02_Visitor_simulation/diagram.json`](02_Visitor_simulation/diagram.json) | Wokwi circuit wiring diagram |
 | [`02_Visitor_simulation/libraries.txt`](02_Visitor_simulation/libraries.txt) | Library dependencies for simulation |
